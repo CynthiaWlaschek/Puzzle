@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+        }
+
+        .haupt {
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "eins zwei drei"
+                "eins vier vier"
+                "fuenf sechs sechs";
+            gap: 3px;
+        }
+
+        .abc {
+            background-color: purple;
+        }
+
+        .eins {
+            grid-area: eins;
+            background: url("1.jpg");
+            background-size: cover;
+        }
+
+        .zwei {
+            grid-area: zwei;
+            background: url("2.jpg");
+            background-size: cover;
+        }
+
+        .drei {
+            grid-area: drei;
+            background: url("3.jpg");
+            background-size: cover;
+        }
+
+        .vier {
+            grid-area: vier;
+            background: url("4.jpg");
+            background-size: cover;
+        }
+
+        .fuenf {
+            grid-area: fuenf;
+            background: url("4.jpg");
+            background-size: cover;
+        }
+
+        .fuenf {
+            grid-area: fuenf;
+            background: url("5.jpg");
+            background-size: cover;
+        }
+
+        .sechs {
+            grid-area: sechs;
+            background: url("6.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- GRID -->
+    <div class="haupt">
+        <div class="abc eins"></div>
+        <div class="abc zwei"></div>
+        <div class="abc drei"></div>
+        <div class="abc vier"></div>
+        <div class="abc fuenf"></div>
+        <div class="abc sechs"></div>
+    </div>
+
+    <br><br><br>
+
+    <img src="../Uebung Flex Grid Nav/1.jpg" alt="">
+    <img src="../Uebung Flex Grid Nav/2.jpg" alt="">
+    <img src="../Uebung Flex Grid Nav/3.jpg" alt="">
+    <img src="../Uebung Flex Grid Nav/4.jpg" alt="">
+    <img src="../Uebung Flex Grid Nav/5.jpg" alt="">
+    <img src="../Uebung Flex Grid Nav/6.jpg" alt="">
+    <img src="../Uebung Flex Grid Nav/baeckerei.jpg" alt="">
+</body>
+
+</html>
